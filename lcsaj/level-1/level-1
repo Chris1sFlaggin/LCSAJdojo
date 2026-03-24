@@ -1,0 +1,14 @@
+#!/usr/bin/exec-suid -- /usr/local/bin/python -I
+
+import sys
+
+# LCSAJ 0: entry -> passphrase check -> flag
+passphrase = "lcsaj"
+
+user_input = input("Passphrase: ").strip()
+if user_input != passphrase:
+    print("Wrong passphrase.")
+    sys.exit(1)
+
+with open("/flag") as f:
+    print(f.read())

@@ -1,0 +1,23 @@
+#!/usr/bin/exec-suid -- /usr/local/bin/python -I
+
+import sys
+
+# LCSAJ 0: entry -> loop header
+# LCSAJ 1: loop body (back-edge, repeated)
+# LCSAJ 2: loop exit -> token check -> flag
+# LCSAJ 3: token fail -> exit
+
+ITERATIONS = 7
+token_base = "lcsaj"
+
+token = token_base
+for _ in range(ITERATIONS):
+    token = str(len(token)) + token
+
+user_token = input("Token: ").strip()
+if user_token != token:
+    print("Wrong token.")
+    sys.exit(1)
+
+with open("/flag") as f:
+    print(f.read())

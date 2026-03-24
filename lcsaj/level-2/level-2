@@ -1,0 +1,25 @@
+#!/usr/bin/exec-suid -- /usr/local/bin/python -I
+
+import sys
+
+# LCSAJ 0: entry -> branch A check
+# LCSAJ 1: branch A pass -> branch B check
+# LCSAJ 2: branch A pass + branch B pass -> flag
+# LCSAJ 3: branch A fail -> exit
+# LCSAJ 4: branch B fail -> exit
+
+secret_a = "alpha"
+secret_b = "omega"
+
+value_a = input("Value A: ").strip()
+if value_a != secret_a:
+    print("Incorrect value A.")
+    sys.exit(1)
+
+value_b = input("Value B: ").strip()
+if value_b != secret_b:
+    print("Incorrect value B.")
+    sys.exit(1)
+
+with open("/flag") as f:
+    print(f.read())

@@ -1,0 +1,14 @@
+name: LCSAJdump
+description: |
+  This module demonstrates CTF challenges solved using the LCSAJdump tool.
+  LCSAJdump analyzes a program's Linear Code Sequences and Jumps (LCSAJs),
+  revealing the control-flow paths a program can take.
+  Use `lcsajdump` on the challenge binary to discover which input sequences
+  traverse paths that reach the flag.
+challenges:
+  - id: level-1
+    name: "Level 1: Sequential Path"
+  - id: level-2
+    name: "Level 2: Conditional Branches"
+  - id: level-3
+    name: "Level 3: Nested Loops"

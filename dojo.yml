@@ -9,3 +9,4 @@ modules:
   - id: world
   - id: demo
   - id: lectures
+  - id: lcsaj

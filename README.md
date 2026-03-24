@@ -4,11 +4,14 @@ This repository features an example dojo.
 
 The dojo is defined by [dojo.yml](./dojo.yml).
 
-It contains two modules, `hello` and `world`.
+It contains two modules, `hello` and `world`, plus a `demo`, `lectures`, and `lcsaj` module.
 
 The module `hello` features challenges `apple` and `banana`.
 
 The module `world` features challenges `earth`, `mars`, and `venus`.
+
+The module `lcsaj` features challenges `level-1`, `level-2`, and `level-3` —
+CTF demonstrations for the LCSAJdump tool.
 
 Each challenge demonstrates different challenge definition capabilities, in an increasing order of feature complexity.
 
@@ -18,6 +21,9 @@ See each challenge's README for further information:
 - [earth](./world/earth)
 - [mars](./world/mars)
 - [venus](./world/venus)
+- [level-1](./lcsaj/level-1)
+- [level-2](./lcsaj/level-2)
+- [level-3](./lcsaj/level-3)
 
 ## YAML Structure of `dojo.yml`
 

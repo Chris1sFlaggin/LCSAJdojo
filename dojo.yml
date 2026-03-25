@@ -3,7 +3,7 @@ name: LCSAJdojo
 type: lcsajdojo
 award:
   emoji: ⚙️
-image: images/LCSAJ.png
+image: pwncollege/dojo-update@v1
 modules:
   - id: x86-64
   

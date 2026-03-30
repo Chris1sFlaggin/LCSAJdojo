@@ -2,3 +2,5 @@ name: x86-64
 challenges:
   - id: risckymonke
     name: risckymonke
+  - id: risckiestmonkey
+    name: risckiestmonkey
